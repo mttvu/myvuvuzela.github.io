@@ -19,7 +19,6 @@ import { setupExample }                     from './setup__example.js'
 import { trackCamera }          from './setup__example.js'
 
 import { SystemUtils }                      from '../utils/utils__system.js'
-import { drawCircles }                      from '../utils/utils__canvas.js'
 import { drawFaceDetectionResults }         from '../utils/utils__draw_tracking_results.js'
 
 import { brfv5 }                            from '../brfv5/brfv5__init.js'
@@ -27,7 +26,6 @@ import { brfv5 }                            from '../brfv5/brfv5__init.js'
 import { configureNumFacesToTrack }         from '../brfv5/brfv5__configure.js'
 import { setROIsWholeImage }                from '../brfv5/brfv5__configure.js'
 
-import { colorPrimary }                     from '../utils/utils__colors.js'
 
 import { render3DScene, setNumFaces }       from '../threejs/threejs__setup.js'
 
