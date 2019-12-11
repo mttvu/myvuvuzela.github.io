@@ -49,6 +49,10 @@ export const hideCamera = () => {
 
   __brfv5__camera_canvas_0.classList.add('vh')
   __brfv5__camera_canvas_1.classList.add('vh')
+
+  __brfv5__camera_canvas_0.style.visibility = 'hidden'
+  __brfv5__camera_canvas_1.style.visibility = 'hidden'
+
 }
 
 export const setSizeCamera = (width, height) => {

@@ -134,7 +134,7 @@ const exampleConfig = {
 
 let timeoutId = -1
 
-const run = (_numFacesToTrack = 1) => {
+export const run = (_numFacesToTrack = 1) => {
 
   numFacesToTrack = _numFacesToTrack
 
@@ -144,7 +144,9 @@ const run = (_numFacesToTrack = 1) => {
   
 }
 
-timeoutId = setTimeout(() => { run() }, 1000)
 
 
-run()
+//timeoutId = setTimeout(() => { run() }, 1000)
+
+
+//run()

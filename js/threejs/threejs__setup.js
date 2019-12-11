@@ -74,6 +74,7 @@ const setupLights = (lightNode) => {
 const createRenderer = (canvas) => {
 
   t3d.renderer        = new WebGLRenderer({
+    preserveDrawingBuffer: true,
     canvas:           canvas,
     powerPreference:  'high-performance', //'high-performance' 'low-power'
     alpha:            true,
