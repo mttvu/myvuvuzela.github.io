@@ -3,36 +3,13 @@ import { closeCamera } from '../ui/ui__input__camera.js'
 import { stopTracking } from '../ui/ui__input__data.js'
 import { hideThreejsOverlay } from '../ui/ui__overlay__threejs.js'
 
-
-const hide = () => {
-    var cameraCanvas0 = document.getElementById("__brfv5__camera_canvas_0")
-    var cameraCanvas1 = document.getElementById("__brfv5__camera_canvas_1")
-    var threeJsCanvas = document.getElementById("__brfv5__threejs_canvas")
-    cameraCanvas0.style.display = 'none'
-    cameraCanvas1.style.display = 'none'
-    threeJsCanvas.style.display = 'none'
-}
-
-const show = () => {
-    var cameraCanvas0 = document.getElementById("__brfv5__camera_canvas_0")
-    var cameraCanvas1 = document.getElementById("__brfv5__camera_canvas_1")
-    var threeJsCanvas = document.getElementById("__brfv5__threejs_canvas")
-    cameraCanvas0.style.display = 'block'
-    cameraCanvas1.style.display = 'block'
-    threeJsCanvas.style.display = 'block'
-}
-
 const stop = () => {
     closeCamera()
     stopTracking()
     hideThreejsOverlay()
-    hide()
 }
 
 window.startAR = function startAR() {
-    if (document.getElementById("__brfv5__camera_canvas_0") != null) {
-        show()
-    }
     document.getElementById('share-content').style.display = 'none'
     run()
 }
