@@ -63,7 +63,7 @@ export const configureExample = (brfv5Config) => {
   // The actual 3d model as exported from ThreeJS editor.
   // either rayban.json or earrings.json
   // Textures might be embedded or set as file name in a certain path.
-  load3DModel('./assets/3d/glasses.json',
+  load3DModel('./assets/3d/headphones2.json',
     null, null).then(() => {
 
     set3DModelByName()
